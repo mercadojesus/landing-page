@@ -29,7 +29,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     */
-    min-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -222,3 +221,82 @@ body {
     color: #ffffff;
 }
 /* Finalizamos la sección header */
+
+/* Iniciamos la Seccion Personal */
+.personal {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.personal-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+hr {
+    border: 1px solid #cf2d3a;
+    width: 80px;
+}
+
+.personal-txt p {
+    padding: 50px 150px;
+    color: #ffffff;
+}
+
+.personal-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px 0;
+}
+
+.personal-1 {
+    padding: 35px 25px;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+.personal-1 img {
+    width: auto;
+    max-height: 300px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.personal-1 h3 {
+    font-size: 30px;
+    color: #cf2d3a;
+}
+
+.personal-1 p {
+    padding: 0 50px;
+    color: #afafaf;
+}
+
+.sbr { /* Corresponde al botón saber más */
+    position: relative;
+    letter-spacing: 2px;
+    color: #cf2d3a;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.sbr:after { /* Corresponde al subrayado */
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #cf2d3a;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .3s;
+    will-change: width;
+}
+
+.sbr:hover:after { /* Corresponde al efecto del subrayado */
+    width: 100%;
+    right: 0;
+}
+/* Finalizamos la Seccion Personal */
