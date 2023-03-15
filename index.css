@@ -112,3 +112,107 @@ body {
 }
 /* Finalizamos el navbar del header */
 
+/* Iniciamos la sección header */
+.header-txt {
+    text-align: center;
+    margin-bottom: 45pxs;
+}
+
+.header-txt h1, span, h3 {
+    font-size: 110px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: #cf2d3a;
+    margin-bottom: 15px;
+}
+
+.header-txt h1 {
+    margin-top: 100px;
+}
+
+.header-txt span {
+    font-size: 25px;
+}
+
+.header-txt p {
+    color: #afafaf;
+    padding: 0 250px;
+    margin: 25px 0;
+}
+
+.skull {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    display: block;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    border: 2px solid #cf2d3a;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 25px 0;
+    transition: .3s linear;
+    transition-property: background-color, color;
+}
+
+.btn-1:hover {
+    background-color: #cf2d3a;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 11px 25px;
+    border: 2px solid #cf2d3a;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #cf2d3a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 25px 0;
+    transition: .3s linear;
+    transition-property: background-color, color;
+}
+
+.btn-2:hover {
+    background-color: #cf2d3a;
+    color: #070707;
+}
+
+.header-dir { /* Damos estilo a las cards de ubicación */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header-dir-2 { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.dir {
+    flex: 1 1 120rem;
+    text-align: center;
+}
+
+.dir-img {
+    width: auto;
+    max-height: 80px;
+}
+
+.dir p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ffffff;
+}
+/* Finalizamos la sección header */
