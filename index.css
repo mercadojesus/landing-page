@@ -20,3 +20,95 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* Iniciamos el navbar del header */
+.header {
+    /*
+    background-image: url(imgs/tatoo-bg-5.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    color: #cf2d3a;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 20px 0 0; /* Con esto, ponemos los items del menu y el logo en una misma línea */
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a { /* Estilos de los enlaces del navbar */
+    font-size: 18px;
+    margin: 20px 20px 2px;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    transition: all .3s linear;
+}
+
+.navbar ul li a:hover {
+    color: #cf2d3a;
+}
+
+
+.link:after { /* Subrayado */
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .4s;
+    will-change: width;
+}
+
+.link:hover:after {
+    background-color: #cf2d3a;
+    width: 100%;
+    right: 0;
+}
+
+.socials-1 .fa { /* Estilos de los íconos */
+    letter-spacing: 25px;
+    font-size: 30px;
+    color: #cf2d3a;
+    margin-top: 20px;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+/* Finalizamos el navbar del header */
+
