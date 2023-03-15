@@ -23,12 +23,8 @@ body {
 
 /* Iniciamos el navbar del header */
 .header {
-    /*
-    background-image: url(imgs/tatoo-bg-5.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
+    background-image: url(imgs/bg-5.jpg);
     background-size: cover;
-    */
     display: flex;
     align-items: center;
 }
@@ -312,3 +308,42 @@ hr {
     right: 0;
 }
 /* Finalizamos la Seccion Personal */
+
+/* Iniciamos la Seccion Wellcome */
+.wellcome {
+    display: flex;
+}
+
+.wellcome-1{
+    background-image: url(imgs/muestra-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.wellcome-2 {
+    width: 50%;
+    padding: 150px 250px 150px 100px;
+    background-color: #191919;
+}
+
+h2 {
+    font-size: 90px;
+    line-height: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #afafaf;
+    margin: 25px 0;
+}
+
+.b1 {
+    color: #cf2d3a;
+}
+/* Finalizamos la Seccion Wellcome */
