@@ -236,14 +236,24 @@ body {
     margin-bottom: 25px;
 }
 
+h2 {
+    font-size: 90px;
+    line-height: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
 hr {
     border: 1px solid #cf2d3a;
     width: 80px;
 }
 
 .personal-txt p {
-    padding: 50px 150px;
-    color: #ffffff;
+    font-size: 16px;
+    color: #afafaf;
+    margin: 25px 0;
 }
 
 .personal-group {
@@ -255,12 +265,13 @@ hr {
 .personal-1 {
     padding: 35px 25px;
     margin: 0 10px;
-    border-radius: 15px;
 }
 
 .personal-1 img {
     width: auto;
-    max-height: 300px;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 15px;
     margin-bottom: 25px;
 }
@@ -273,6 +284,7 @@ hr {
 .personal-1 p {
     padding: 0 50px;
     color: #afafaf;
+    margin-bottom: 20px;
 }
 
 .sbr { /* Corresponde al botón saber más */
