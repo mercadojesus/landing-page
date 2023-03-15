@@ -96,7 +96,13 @@ body {
     font-size: 30px;
     color: #cf2d3a;
     margin-top: 20px;
+    transition: all .5s ease-in-out;
 }
+
+.socials-1 .fa:hover { /* Efecto hover para los ícono */
+    color: #ffffff;
+    transform: scale(1.1,1.1);
+} 
 
 #menu {
     display: none;
