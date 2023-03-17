@@ -24,6 +24,7 @@ body {
 /* Iniciamos el navbar del header */
 .header {
     background-image: url(imgs/bg-5.jpg);
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
     align-items: center;
