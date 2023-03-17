@@ -221,7 +221,7 @@ body {
 
 /* Iniciamos la Seccion Personal */
 .personal {
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
     text-align: center;
 }
 
@@ -256,7 +256,7 @@ hr {
 .personal-group {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px 0;
+    margin-bottom: 30px;
 }
 
 .personal-1 {
@@ -318,10 +318,9 @@ hr {
 }
 
 .wellcome-1{
-    border: 1px solid white;
     background-image: url(imgs/tatto-bg-8.jpg);
     background-attachment: fixed;
-    background-position: -400px;
+    background-position: -420px -900px;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -353,3 +352,50 @@ p {
     color: #cf2d3a;
 }
 /* Finalizamos la Seccion Wellcome */
+
+/* Iniciamos la Seccion Servicios */
+.services {
+    padding: 80px 0 30px 0;
+    text-align: center;
+}
+
+.services-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-txt p {
+    padding: 50px 150px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.services-1 {
+    width: 100%;
+    background-color: #070707;
+    padding: 30px 20px;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+.services-1 img {
+    width: auto;
+    max-height: 100px;
+}
+
+.services-1 h3 {
+    font-size: 30px;
+    color: #ffffff;
+    height: 60px;
+}
+
+.services-1 p {
+    height: 220px;
+}
+
+/* Finalizamos la Seccion Servicios */
