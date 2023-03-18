@@ -203,8 +203,14 @@ body {
 }
 
 .dir {
+    cursor: pointer;
     flex: 1 1 120rem;
     text-align: center;
+    transition: all .5s ease;
+}
+
+.dir:hover {
+    transform: translateY(-3%);
 }
 
 .dir-img {
@@ -376,11 +382,17 @@ p {
 }
 
 .services-1 {
+    cursor: pointer;
     width: 100%;
     background-color: #070707;
     padding: 30px 20px;
     margin: 0 10px;
     border-radius: 15px;
+    transition: all .5s ease;
+}
+
+.services-1:hover {
+    transform: translateY(-2%);
 }
 
 .services-1 img {
@@ -399,3 +411,17 @@ p {
 }
 
 /* Finalizamos la Seccion Servicios */
+
+/* Iniciamos la Seccion Galería */
+.galeria {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.galeria-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* Finalizamos la Seccion Galería */
