@@ -21,6 +21,11 @@ body {
     margin: 0 auto;
 }
 
+.container-2 {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 /* Iniciamos el navbar del header */
 .header {
     background-image: url(imgs/bg-5.jpg);
@@ -272,6 +277,10 @@ hr {
     margin: 0 10px;
 }
 
+.personal-1:hover {
+    cursor: pointer;
+}
+
 .personal-1 img {
     width: auto;
     height: auto;
@@ -401,7 +410,7 @@ p {
 }
 
 .services-1 h3 {
-    font-size: 30px;
+    font-size: 20px;
     color: #ffffff;
     height: 60px;
 }
@@ -414,13 +423,11 @@ p {
 
 /* Iniciamos la Seccion Galería */
 .galeria {
-    border: 1px solid white;
     padding: 50px 0;
     text-align: center;
 }
 
 .galeria-txt {
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -436,24 +443,18 @@ p {
 }
 
 .galeria-group { /* Corresponde al contenedor de los cards */
-    /* display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: auto;
-    grid-gap: 3rem; */
     display: flex;
     gap: 20px; 
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #070707;
 }
 
 .galeria-1 { /* corresponde a los cards */
-    border: 1px solid white;
+    border-radius: 15px;
     text-align: center;
     position: relative;
-    width: 300px;
-    height: 350px;
-    /* overflow: hidden; */
+    width: 400px;
+    height: 450px;
 }
 
 .galeria-1 .face {
@@ -471,13 +472,14 @@ p {
 }
 
 .galeria-1 .front img {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .galeria-1 .front h3 {
+    font-size: 30px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -490,7 +492,7 @@ p {
 
 .galeria-1 .back {
     transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
+    background-color: #070707;
     padding: 15px;
     color: #f3f3f3;
     display: flex;
@@ -500,20 +502,23 @@ p {
 }
 
 .galeria-1 .back h3 {
-    font-size: 30px;
-    margin-top: 20px;
+    font-size: 40px;
+    margin-top: 30px;
     letter-spacing: 2px;
 }
 
 .galeria-1 .back p {
     letter-spacing: 1px;
+    margin-bottom: 50px;
 }
 
 .galeria-1:hover .front {
+    cursor: pointer;
     transform: perspective(600px) rotateY(180deg);
 }
 
 .galeria-1:hover .back {
+    cursor: pointer;
     transform: perspective(600px) rotateY(360deg);
 }
 
