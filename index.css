@@ -566,3 +566,46 @@ td {
     width: 50%;
 }
 /* Finalizamos la Seccion Prices */
+
+/* Iniciamos la Seccion Footer */
+.footer-bg {
+    background-image: url(imgs/tatoo-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-1 {
+    margin-bottom: 15px;
+}
+
+.campo {
+    margin: 5px;
+    padding: 20px 15px;
+    width: 250px;
+    background-color: #0e0e0e;
+    border: 1px solid #cf2d3a;
+    outline: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+textarea {
+    width: 520px !important;
+}
+
+.footer-txt {
+    text-align: center;
+    padding: 10px;
+    background-color: #070707;
+}
+/* Finalizamos la Seccion Footer */
