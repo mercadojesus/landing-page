@@ -521,21 +521,48 @@ p {
     cursor: pointer;
     transform: perspective(600px) rotateY(360deg);
 }
-
-/*
-.galeria-1 img {
-    width: auto;
-    max-height: 600px;
-    height: 600px;   
-}
-
-.galeria-1 img:hover {
-    cursor: pointer;
-}
-
-.galeria-1 h3 {
-    font-size: 30px;
-}
-*/
-
 /* Finalizamos la Seccion Galería */
+
+/* Iniciamos la Seccion Prices */
+.prices {
+    display: flex;
+}
+
+.prices-1 {
+    width: 50%;
+    padding: 150px 250px 150px 100px;
+    background-color: #191919;
+}
+
+table {
+    margin: 50px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #afafaf;
+    margin-bottom: 20px;
+}
+
+th {
+    color: #ffffff;
+    padding-bottom: 15px;
+}
+
+td {
+    color: #cf2d3a;
+}
+
+.prices-2 {
+    background-image: url(imgs/bg-3.jpg);
+    background-attachment: fixed;
+    background-position: 420px 0px;;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+/* Finalizamos la Seccion Prices */
