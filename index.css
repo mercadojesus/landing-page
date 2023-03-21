@@ -604,8 +604,178 @@ textarea {
 }
 
 .footer-txt {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
     padding: 10px;
     background-color: #070707;
 }
 /* Finalizamos la Seccion Footer */
+
+/* Iniciamos la Sección Responsive */
+@media(max-width:991px) {
+    /* Iniciamos la Sección Menú Responsive */
+    .menu {
+        padding: 20px 10%;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .socials-1 {
+        display: none;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1f1f1f;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+        transition: 1s ease;
+    }
+    /* Finalizamos la Sección Menú Responsive */
+
+    /* Iniciamos la Sección Header Responsive */
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-txt {
+        margin-bottom: 15px;
+    }
+
+    .header-txt h1 {
+        font-size: 90px;
+    }
+
+    .header-txt p{
+        padding: 0;
+        /* margin: 15px 0; */
+    }
+
+    .header-dir {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .header-dir-2 {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .dir {
+        max-height: 200px;
+        margin: 0 0 20px 0;
+    }
+
+    .dir p {
+        font-size: 18px;
+    }
+    /* Finalizamos la Sección Header Responsive */
+
+    /* Iniciamos la Sección Personal Responsive */
+    .personal {
+        padding: 30px;
+    }
+
+    .personal-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .personal-1 {
+        margin-bottom: 25px;
+    }
+    /* Finalizamos la Sección Personal Responsive */
+
+    /* Iniciamos la Sección Wellcome Responsive */
+    .wellcome {
+        flex-direction: column;
+    }
+
+    .wellcome-1 {
+        display: none;
+    }
+
+    .wellcome-2 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    p {
+        margin: 15px 0;
+    }
+    /* Finalizamos la Sección Wellcome Responsive */
+
+    /* Iniciamos la Sección Services Responsive */
+    .services {
+        padding: 30px;
+    }
+
+    .services-txt p {
+        padding: 0;
+    }
+
+    .services-group {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .services-1 {
+        margin: 0 0 20px 0;
+    }
+    /* Finalizamos la Sección Services Responsive */
+
+    /* Iniciamos la Sección Prices Responsive */
+    .prices {
+        flex-direction: column;
+    }
+
+    .prices-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    table {
+        margin: 25px 0 0 0;
+    }
+
+    .prices-2 {
+        display: none;
+    }
+    /* Finalizamos la Sección Prices Responsive */
+
+    /* Iniciamos la Sección Footer Responsive */
+
+    .footer-bg {
+        padding: 30px;
+    }
+
+    textarea {
+        width: 250 !important;
+    }
+    /* Finalizamos la Sección Footer Responsive */
+}
+/* Finalizamos la Sección Responsive */
