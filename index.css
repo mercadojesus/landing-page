@@ -1,0 +1,781 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* font-family: 'Bebas Neue', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-2 {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Iniciamos el navbar del header */
+.header {
+    background-image: url(imgs/bg-5.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    color: #cf2d3a;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 20px 0 0; /* Con esto, ponemos los items del menu y el logo en una misma línea */
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a { /* Estilos de los enlaces del navbar */
+    font-size: 18px;
+    margin: 20px 20px 2px;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    transition: all .3s linear;
+}
+
+.navbar ul li a:hover {
+    color: #cf2d3a;
+}
+
+
+.link:after { /* Subrayado */
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .4s;
+    will-change: width;
+}
+
+.link:hover:after {
+    background-color: #cf2d3a;
+    width: 100%;
+    right: 0;
+}
+
+.socials-1 .fa { /* Estilos de los íconos */
+    letter-spacing: 25px;
+    font-size: 30px;
+    color: #cf2d3a;
+    margin-top: 20px;
+    transition: all .5s ease-in-out;
+}
+
+.socials-1 .fa:hover { /* Efecto hover para los ícono */
+    color: #ffffff;
+    transform: scale(1.1,1.1);
+} 
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+/* Finalizamos el navbar del header */
+
+/* Iniciamos la sección header */
+.header-txt {
+    text-align: center;
+    margin-bottom: 45pxs;
+}
+
+.header-txt h1, span, h3 {
+    font-size: 110px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: #cf2d3a;
+    margin-bottom: 15px;
+}
+
+.header-txt h1 {
+    margin-top: 100px;
+}
+
+.header-txt span {
+    font-size: 25px;
+}
+
+.header-txt p {
+    color: #afafaf;
+    padding: 0 250px;
+    margin: 25px 0;
+}
+
+.skull {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    display: block;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    border: 2px solid #cf2d3a;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 25px 0;
+    transition: .3s linear;
+    transition-property: background-color, color;
+}
+
+.btn-1:hover {
+    background-color: #cf2d3a;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 11px 25px;
+    border: 2px solid #cf2d3a;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #cf2d3a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 25px 0;
+    transition: .3s linear;
+    transition-property: background-color, color;
+}
+
+.btn-2:hover {
+    background-color: #cf2d3a;
+    color: #070707;
+}
+
+.header-dir { /* Damos estilo a las cards de ubicación */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header-dir-2 { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.dir {
+    cursor: pointer;
+    flex: 1 1 120rem;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.dir:hover {
+    transform: translateY(-3%);
+}
+
+.dir-img {
+    width: auto;
+    max-height: 80px;
+}
+
+.dir p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ffffff;
+}
+/* Finalizamos la sección header */
+
+/* Iniciamos la Seccion Personal */
+.personal {
+    padding: 100px 0 50px 0;
+    text-align: center;
+}
+
+.personal-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 90px;
+    line-height: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 1px solid #cf2d3a;
+    width: 80px;
+}
+
+.personal-txt p {
+    font-size: 16px;
+    color: #afafaf;
+    margin: 25px 0;
+}
+
+.personal-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.personal-1 {
+    background-color: #070707;
+    border-radius: 15px;
+    padding: 35px 25px;
+    margin: 0 10px;
+}
+
+.personal-1:hover {
+    cursor: pointer;
+}
+
+.personal-1 img {
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.personal-1 h3 {
+    font-size: 30px;
+    color: #cf2d3a;
+}
+
+.personal-1 p {
+    padding: 0 50px;
+    color: #afafaf;
+    margin-bottom: 20px;
+}
+
+.sbr { /* Corresponde al botón saber más */
+    position: relative;
+    letter-spacing: 2px;
+    color: #cf2d3a;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.sbr:after { /* Corresponde al subrayado */
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #cf2d3a;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .3s;
+    will-change: width;
+}
+
+.sbr:hover:after { /* Corresponde al efecto del subrayado */
+    width: 100%;
+    right: 0;
+}
+/* Finalizamos la Seccion Personal */
+
+/* Iniciamos la Seccion Wellcome */
+.wellcome {
+    display: flex;
+}
+
+.wellcome-1{
+    background-image: url(imgs/tatto-bg-8.jpg);
+    background-attachment: fixed;
+    background-position: -420px -900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+
+.wellcome-2 {
+    width: 50%;
+    padding: 150px 250px 150px 100px;
+    background-color: #191919;
+}
+
+h2 {
+    font-size: 90px;
+    line-height: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #afafaf;
+    margin: 25px 0;
+}
+
+.b1 {
+    color: #cf2d3a;
+}
+/* Finalizamos la Seccion Wellcome */
+
+/* Iniciamos la Seccion Servicios */
+.services {
+    padding: 80px 0 30px 0;
+    text-align: center;
+}
+
+.services-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-txt p {
+    padding: 50px 150px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.services-1 {
+    cursor: pointer;
+    width: 100%;
+    background-color: #070707;
+    padding: 30px 20px;
+    margin: 0 10px;
+    border-radius: 15px;
+    transition: all .5s ease;
+}
+
+.services-1:hover {
+    transform: translateY(-2%);
+}
+
+.services-1 img {
+    width: auto;
+    max-height: 100px;
+}
+
+.services-1 h3 {
+    font-size: 20px;
+    color: #ffffff;
+    height: 60px;
+}
+
+.services-1 p {
+    height: 220px;
+}
+
+/* Finalizamos la Seccion Servicios */
+
+/* Iniciamos la Seccion Galería */
+.galeria {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.galeria-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.galeria-txt h2 {
+    margin-bottom: 40px;
+}
+
+.galeria-txt p {
+    margin: 40px 0;
+}
+
+.galeria-group { /* Corresponde al contenedor de los cards */
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria-1 { /* corresponde a los cards */
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    width: 400px;
+    height: 450px;
+}
+
+.galeria-1 .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.galeria-1 .front {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.galeria-1 .front img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria-1 .front h3 {
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.galeria-1 .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #070707;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.galeria-1 .back h3 {
+    font-size: 40px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+.galeria-1 .back p {
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.galeria-1:hover .front {
+    cursor: pointer;
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.galeria-1:hover .back {
+    cursor: pointer;
+    transform: perspective(600px) rotateY(360deg);
+}
+/* Finalizamos la Seccion Galería */
+
+/* Iniciamos la Seccion Prices */
+.prices {
+    display: flex;
+}
+
+.prices-1 {
+    width: 50%;
+    padding: 150px 250px 150px 100px;
+    background-color: #191919;
+}
+
+table {
+    margin: 50px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #afafaf;
+    margin-bottom: 20px;
+}
+
+th {
+    color: #ffffff;
+    padding-bottom: 15px;
+}
+
+td {
+    color: #cf2d3a;
+}
+
+.prices-2 {
+    background-image: url(imgs/bg-3.jpg);
+    background-attachment: fixed;
+    background-position: 420px 0px;;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+/* Finalizamos la Seccion Prices */
+
+/* Iniciamos la Seccion Footer */
+.footer-bg {
+    background-image: url(imgs/tatoo-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-1 {
+    margin-bottom: 15px;
+}
+
+.campo {
+    margin: 5px;
+    padding: 20px 15px;
+    width: 250px;
+    background-color: #0e0e0e;
+    border: 1px solid #cf2d3a;
+    outline: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+textarea {
+    width: 520px !important;
+}
+
+.footer-txt {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #070707;
+}
+/* Finalizamos la Seccion Footer */
+
+/* Iniciamos la Sección Responsive */
+@media(max-width:991px) {
+    /* Iniciamos la Sección Menú Responsive */
+    .menu {
+        padding: 20px 10%;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .socials-1 {
+        display: none;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1f1f1f;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+        transition: 1s ease;
+    }
+    /* Finalizamos la Sección Menú Responsive */
+
+    /* Iniciamos la Sección Header Responsive */
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-txt {
+        margin-bottom: 15px;
+    }
+
+    .header-txt h1 {
+        font-size: 90px;
+    }
+
+    .header-txt p{
+        padding: 0;
+        /* margin: 15px 0; */
+    }
+
+    .header-dir {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .header-dir-2 {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .dir {
+        max-height: 200px;
+        margin: 0 0 20px 0;
+    }
+
+    .dir p {
+        font-size: 18px;
+    }
+    /* Finalizamos la Sección Header Responsive */
+
+    /* Iniciamos la Sección Personal Responsive */
+    .personal {
+        padding: 30px;
+    }
+
+    .personal-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .personal-1 {
+        margin-bottom: 25px;
+    }
+    /* Finalizamos la Sección Personal Responsive */
+
+    /* Iniciamos la Sección Wellcome Responsive */
+    .wellcome {
+        flex-direction: column;
+    }
+
+    .wellcome-1 {
+        display: none;
+    }
+
+    .wellcome-2 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    p {
+        margin: 15px 0;
+    }
+    /* Finalizamos la Sección Wellcome Responsive */
+
+    /* Iniciamos la Sección Services Responsive */
+    .services {
+        padding: 30px;
+    }
+
+    .services-txt p {
+        padding: 0;
+    }
+
+    .services-group {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .services-1 {
+        margin: 0 0 20px 0;
+    }
+    /* Finalizamos la Sección Services Responsive */
+
+    /* Iniciamos la Sección Prices Responsive */
+    .prices {
+        flex-direction: column;
+    }
+
+    .prices-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    table {
+        margin: 25px 0 0 0;
+    }
+
+    .prices-2 {
+        display: none;
+    }
+    /* Finalizamos la Sección Prices Responsive */
+
+    /* Iniciamos la Sección Footer Responsive */
+
+    .footer-bg {
+        padding: 30px;
+    }
+
+    textarea {
+        width: 250 !important;
+    }
+    /* Finalizamos la Sección Footer Responsive */
+}
+/* Finalizamos la Sección Responsive */
