@@ -61,7 +61,7 @@ body {
 
 .menu .navbar ul li a { /* Estilos de los enlaces del navbar */
     font-size: 18px;
-    margin: 20px 20px 2px;
+    margin: 25px 20px 2px;
     color: #ffffff;
     display: inline-block;
     position: relative;
@@ -92,8 +92,30 @@ body {
     right: 0;
 }
 
-/* Aplicamos Estilos al Boton + */
+/* Estilos del Boton Login */
+.menu .navbar ul .btnLogin-popup {
+    margin: 15px 0 0 10px;
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #cf2d3a;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #cf2d3a;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .5s linear;
+}
 
+.menu .navbar ul .btnLogin-popup:hover {
+    background-color: #cf2d3a;
+    color: #070707;
+    letter-spacing: 3px;
+}
+
+/* Aplicamos Estilos al Boton + */
 #btn-mas {
     display: none;
 }
@@ -499,7 +521,7 @@ p {
     backface-visibility: hidden;
     border-radius: 15px;
     overflow: hidden;
-    transition: .5s;
+    transition: .8s;
 }
 
 .galeria-1 .front {
@@ -605,6 +627,7 @@ td {
 /* Iniciamos la Seccion Footer */
 .footer-bg {
     background-image: url(imgs/tatoo-bg.png);
+    min-height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
