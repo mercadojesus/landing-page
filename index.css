@@ -92,18 +92,54 @@ body {
     right: 0;
 }
 
-.socials-1 .fa { /* Estilos de los íconos */
-    letter-spacing: 25px;
+/* Aplicamos Estilos al Boton + */
+
+#btn-mas {
+    display: none;
+}
+
+.icon-plus {
+    display: block !important;
+}
+
+.socials-1 {
+    position: fixed;
+    bottom: 80px;
+    right: 25px;
+}
+
+.redes .fa, .icon-plus { /* Estilos de los íconos */
+    display: block;
+    width: 55px;
+    height: 55px;
     font-size: 30px;
     color: #cf2d3a;
-    margin-top: 20px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
     transition: all .5s ease-in-out;
 }
 
-.socials-1 .fa:hover { /* Efecto hover para los ícono */
+.redes .fa:hover, .icon-plus:hover { /* Efecto hover para los ícono */
     color: #ffffff;
     transform: scale(1.1,1.1);
-} 
+}
+
+.redes .fa {
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-mas:checked ~ .redes .fa {
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#btn-mas:checked ~ .btn-mas .icon-plus {
+    transform: rotate(137deg);
+}
 
 #menu {
     display: none;
@@ -177,19 +213,15 @@ body {
 
 .btn-2 {
     position: fixed;
-    bottom: -5px;
+    bottom: 20px;
     right: 20px;
-    display: inline-block;
     padding: 11px 20px;
     border: 2px solid #cf2d3a;
     background-color: transparent;
     border-radius: 5px;
     color: #cf2d3a;
     text-transform: uppercase;
-    letter-spacing: 2px;
     font-size: 20px;
-    font-family: 'Bebas Neue', cursive;
-    margin: 25px 0;
     transition: .3s linear;
     transition-property: background-color, color;
 }
