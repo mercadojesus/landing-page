@@ -94,7 +94,6 @@ body {
 
 /* Estilos del Boton Login */
 .menu .navbar ul .btnLogin-popup {
-    
     margin: 15px 0 0 10px;
     width: 100px;
     height: 50px;
@@ -116,21 +115,56 @@ body {
 }
 
 /* Aplicamos Estilos al Boton User */
-/*
+
 #btn-log {
-    display: none;
+    
 }
 
 .login {
     position: fixed;
-    bottom: 200px;
-    right: 25px;
+    bottom: 150px;
+    right: 30px;
 }
 
-.icon-user {
+.cartel { /* Estilos del cartel */
     display: block !important;
+    color: #ffffff;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    cursor: pointer;
 }
-*/
+
+
+.icon-user { /* Estilos del Icono */
+    border: 1px solid #fff;
+    display: block !important;
+    color: #ffffff;
+    text-align: right;
+    font-size: 30px;
+}
+
+.cartel { /* Estilos en común del cartel y del Icono */
+    transition: all .5s ease;
+}
+
+.cartel:hover { /* Efectos hover sobre el cartel */
+    border: 2px solid #cf2d3a;
+    border-radius: 5px;
+    color: #cf2d3a;
+}
+
+.cartel h1 {
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-log:checked ~ .cartel h1 {
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: Visible;
+}
 
 /* Aplicamos Estilos al Boton Más */
 #btn-mas {
