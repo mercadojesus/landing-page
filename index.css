@@ -117,18 +117,17 @@ body {
 /* Aplicamos Estilos al Boton User */
 
 #btn-log {
-    
+    display: none;
 }
 
 .login {
     position: fixed;
-    bottom: 150px;
-    right: 30px;
+    bottom: 87px;
+    right: 80px;
 }
 
-.cartel { /* Estilos del cartel */
-    display: block !important;
-    color: #ffffff;
+.cartel .hola { /* Estilos del cartel */
+    display: block;
     width: 200px;
     height: 100px;
     text-align: center;
@@ -137,34 +136,34 @@ body {
 
 
 .icon-user { /* Estilos del Icono */
-    border: 1px solid #fff;
     display: block !important;
-    color: #ffffff;
     text-align: right;
     font-size: 30px;
 }
 
-.cartel { /* Estilos en común del cartel y del Icono */
+.cartel .hola, .icon-user {  /* Estilos en común del cartel y del Icono */
+    color: #ffffff;
     transition: all .5s ease;
 }
 
-.cartel:hover { /* Efectos hover sobre el cartel */
+.cartel .hola:hover { /* Efectos hover sobre el cartel */
     border: 2px solid #cf2d3a;
     border-radius: 5px;
     color: #cf2d3a;
 }
 
-.cartel h1 {
+.cartel .hola {
     margin-bottom: -15px;
     opacity: 0;
     visibility: hidden;
 }
 
-#btn-log:checked ~ .cartel h1 {
+#btn-log:checked ~ .cartel .hola {
     margin-bottom: 10px;
     opacity: 1;
-    visibility: Visible;
+    visibility: visible;
 }
+
 
 /* Aplicamos Estilos al Boton Más */
 #btn-mas {
