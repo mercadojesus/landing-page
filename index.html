@@ -7,6 +7,7 @@
     <title>Landing Page - Jesus Mercado</title>
     <!-- links -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSS/fontello.css">
     <script src="https://kit.fontawesome.com/845ab0825c.js" crossorigin="anonymous"></script>
     <link rel="icon" href="imgs/skull.ico">
 </head>
@@ -18,8 +19,10 @@
         <!-- Iniciamos la sección navbar -->
         <div class="menu container">
 
-            <!-- Logo -->
+            <!-- Logo --> 
             <a href="#" class="logo">Logo</a>
+
+            <!-- Ícono menú hamburguesa -->
             <input type="checkbox" id="menu">
             <label for="menu">
                 <img src="imgs/menu.png" class="menu-icono" alt="">
@@ -28,6 +31,7 @@
             <!-- Navbar -->
             <nav class="navbar">
                 <ul>
+                    
                     <li><a href="#inicio" class="link">Inicio</a></li>
                     <li><a href="#personal" class="link">Nosotros</a></li>
                     <li><a href="#instalaciones" class="link">Instalaciones</a></li>
@@ -35,14 +39,50 @@
                     <li><a href="#galeria" class="link">Galeria</a></li>
                     <li><a href="#consultas" class="link">Consultas</a></li>
                     <li><a href="#turnos" class="link">Turnos</a></li>
+                    <a href="#turnos"><button class="btnLogin-popup">Registrate</button></a>
+                    
                 </ul>
             </nav>
 
+            <!-- Login  -->
+            <div class="login">
+                <input type="checkbox" id="btn-log">
+                <div class="log-cont">
+                    <form class="formulario">
+                        <h4>Login</h4>
+                        <div class="contenedor">
+                            <div class="input-contenedor">
+                                <i class="fas fa-envelope icon"></i>
+                                <input type="text" placeholder="Correo Electronico">  
+                            </div>
+                                
+                            <div class="input-contenedor">
+                               <i class="fas fa-key icon"></i>
+                               <input type="password" placeholder="Contraseña">
+                            </div>
+                            <input type="submit" value="Login" class="button">
+                            <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+                            <p>¿No tienes una cuenta? <a class="link-2" href="#turnos">Registrate </a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="btn-log">
+                    <label for="btn-log" class="icon-user"></label>
+                </div>
+            </div>
+           
+
             <!-- Redes Sociales -->
             <div class="socials-1">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
+                <input type="checkbox" id="btn-mas">
+                <div class="redes">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="btn-mas">
+                    <label for="btn-mas" class="icon-plus"></label>
+                </div>
             </div>
 
         </div>
@@ -161,8 +201,7 @@
         </div>
 
         <a href="#" class="btn-1">Más Información</a>
-        <a href="#inicio" class="btn-2">▲</a>
-
+        
     </main>
     <!-- Finalizamos la sección Personal -->
 
@@ -213,7 +252,6 @@
             </div>
 
             <a href="#" class="btn-1">Más Información</a>
-            <a href="#inicio" class="btn-2">▲</a>
 
         </div>
 
@@ -295,7 +333,6 @@
         </div>
 
         <a href="#" class="btn-1">Más Información</a>
-        <a href="#inicio" class="btn-2">▲</a>
 
     </section>
     <!-- Finalizamos la seccion Services -->
@@ -442,8 +479,6 @@
 
         </div>
 
-        <a href="#inicio" class="btn-2">▲</a>
-
     </section>
     <!-- Finalizamos la sección Galería -->
 
@@ -501,7 +536,6 @@
             </table>
 
             <a href="#" class="btn-1">Más Información</a>
-            <a href="#inicio" class="btn-2">▲</a>
 
         </div>
 
@@ -515,7 +549,7 @@
 
         <div class="footer-bg">
 
-            <h2>Reserva Tu Turno</h2>
+            <h2>Registrate Para Reservar Tu Turno</h2>
 
             <form>
                 <div class="campo-1">
@@ -524,10 +558,18 @@
                 </div>
 
                 <div class="campo-1">
-                    <input class="campo" type="number" placeholder="Teléfono">
                     <input class="campo" type="email" placeholder="Correo">
+                    <input class="campo" type="number" placeholder="Teléfono">
                 </div>
+
+                <div class="campo-1">
+                    <input class="campo" type="text" placeholder="Nombre de Usuario">
+                    <input class="campo" type="password" placeholder="Contraseña">
+                    <input class="campo" type="password" placeholder="Confirmar Contraseña">
+                </div>
+
                 <textarea class="campo" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+                <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
                 <input type="submit" value="Enviar" class="btn-1">
                 <a href="#inicio" class="btn-2">▲</a>
             </form>
@@ -535,14 +577,7 @@
         </div>
 
         <div class="footer-txt">
-
             
-            <div class="socials-1">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-            </div>
-
             <p>
                 Desarrollado por Jesús Mercado para Nucba
             </p>
