@@ -122,8 +122,8 @@ body {
 
 .login {
     position: fixed;
-    bottom: 87px;
-    right: 80px;
+    bottom: 26px;
+    right: 150px;
 }
 
 .cartel .hola { /* Estilos del cartel */
@@ -139,16 +139,21 @@ body {
     display: block !important;
     text-align: right;
     font-size: 30px;
+    transition: all .5s ease-in-out;
 }
 
 .cartel .hola, .icon-user {  /* Estilos en común del cartel y del Icono */
     color: #ffffff;
-    transition: all .5s ease;
+    transition: all .5s ease-in-out;
 }
 
 .cartel .hola:hover { /* Efectos hover sobre el cartel */
     border: 2px solid #cf2d3a;
     border-radius: 5px;
+    color: #cf2d3a;
+}
+
+.icon-user:hover {
     color: #cf2d3a;
 }
 
@@ -176,8 +181,8 @@ body {
 
 .socials-1 {
     position: fixed;
-    bottom: 80px;
-    right: 25px;
+    bottom: 20px;
+    right: 95px;
 }
 
 .redes .fa, .icon-plus { /* Estilos de los íconos */
@@ -283,7 +288,7 @@ body {
     background-color: #cf2d3a;
 }
 
-.btn-2 {
+.btn-2 { /* Botón Flotante Regreso al Inicio */
     position: fixed;
     bottom: 20px;
     right: 20px;
