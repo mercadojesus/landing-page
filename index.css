@@ -95,7 +95,8 @@ body {
 /* Estilos del Boton Login */
 .menu .navbar ul .btnLogin-popup {
     margin: 15px 0 0 10px;
-    width: 100px;
+    padding: 0 10px;
+    width: 100;
     height: 50px;
     background: transparent;
     border: 2px solid #cf2d3a;
@@ -111,7 +112,6 @@ body {
 .menu .navbar ul .btnLogin-popup:hover {
     background-color: #cf2d3a;
     color: #070707;
-    letter-spacing: 3px;
 }
 
 /* Aplicamos Estilos al Boton User */
@@ -126,14 +126,15 @@ body {
     right: 150px;
 }
 
-.cartel .hola { /* Estilos del cartel */
+.log-cont .formulario { /* Estilos del cartel */
+    border: 2px solid #cf2d3a;
+    border-radius: 5px;
     display: block;
-    width: 200px;
-    height: 100px;
-    text-align: center;
+    width: 100%;
+    /* height: 150px; */
     cursor: pointer;
+    backdrop-filter: blur(20px);
 }
-
 
 .icon-user { /* Estilos del Icono */
     display: block !important;
@@ -142,33 +143,95 @@ body {
     transition: all .5s ease-in-out;
 }
 
-.cartel .hola, .icon-user {  /* Estilos en común del cartel y del Icono */
+.log-cont, .icon-user {  /* Estilos en común del cartel y del Icono */
     color: #ffffff;
     transition: all .5s ease-in-out;
 }
 
-.cartel .hola:hover { /* Efectos hover sobre el cartel */
+/* Efectos hover sobre el cartel: */
+/* .cartel .hola:hover { 
     border: 2px solid #cf2d3a;
     border-radius: 5px;
     color: #cf2d3a;
-}
+} */
 
+/* Efecto Hover para el Icono*/
 .icon-user:hover {
     color: #cf2d3a;
 }
 
-.cartel .hola {
+.log-cont, .formulario {
     margin-bottom: -15px;
     opacity: 0;
     visibility: hidden;
 }
 
-#btn-log:checked ~ .cartel .hola {
+#btn-log:checked ~ .log-cont, .formulario {
     margin-bottom: 10px;
     opacity: 1;
     visibility: visible;
 }
 
+/* Iniciamos los Estilos del Formulario de Contacto */
+h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+input[type="text"], input[type="password"] {
+    font-size: 20px;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #cf2d3a;
+    border-radius: 5px;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+}
+
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.button{
+    border: none;
+    width: 80%;
+    color: #cf2d3a;
+    font-size: 20px;
+    background:  transparent;
+    padding: 15px 20px;
+    margin: 0 55px;
+    border: 1px solid #cf2d3a;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .5s linear;
+}
+
+.button:hover{
+    background: #cf2d3a;
+    color: #070707;
+    letter-spacing: 3px;
+}
+
+p{
+    text-align: center;
+}
+
+.link-2{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: .5s linear;
+}
+.link-2:hover{
+     color: #cf2d3a;
+}
+/* Finalizamos los Estilos del Formulario de Contacto */
 
 /* Aplicamos Estilos al Boton Más */
 #btn-mas {
