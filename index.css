@@ -954,3 +954,7 @@ textarea {
     /* Finalizamos la Sección Footer Responsive */
 }
 /* Finalizamos la Sección Responsive */
+
+html {
+    scroll-behavior: smooth;
+}
