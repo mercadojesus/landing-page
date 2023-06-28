@@ -787,7 +787,7 @@ textarea {
 /* Finalizamos la Seccion Footer */
 
 /* Iniciamos la Sección Responsive */
-@media(max-width:991px) {
+@media(max-width:1345px) {
     /* Iniciamos la Sección Menú Responsive */
     .menu {
         padding: 20px 10%;
@@ -795,6 +795,10 @@ textarea {
 
     .menu label {
         display: initial;
+    }
+
+    .login {
+        display: none;
     }
 
     .socials-1 {
@@ -812,6 +816,13 @@ textarea {
 
     .menu .navbar ul li {
         width: 100%;
+        text-align: center;
+    }
+
+    .menu .navbar ul .btnLogin-popup {
+        
+        
+        
         text-align: center;
     }
 
