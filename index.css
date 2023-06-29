@@ -61,7 +61,7 @@ body {
 
 .menu .navbar ul li a { /* Estilos de los enlaces del navbar */
     font-size: 18px;
-    margin: 25px 20px 2px;
+    margin: 25px 20px 2px 0px;
     color: #ffffff;
     display: inline-block;
     position: relative;
@@ -93,8 +93,8 @@ body {
 }
 
 /* Estilos del Boton Login */
-.menu .navbar ul .btnLogin-popup {
-    margin: 15px 0 0 10px;
+.menu .btnLogin-popup {
+    margin-top: 20px;
     padding: 0 10px;
     width: 100;
     height: 50px;
@@ -109,7 +109,7 @@ body {
     transition: .5s linear;
 }
 
-.menu .navbar ul .btnLogin-popup:hover {
+.menu .btnLogin-popup:hover {
     background-color: #cf2d3a;
     color: #070707;
 }
@@ -816,13 +816,6 @@ textarea {
 
     .menu .navbar ul li {
         width: 100%;
-        text-align: center;
-    }
-
-    .menu .navbar ul .btnLogin-popup {
-        
-        
-        
         text-align: center;
     }
 
