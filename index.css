@@ -61,7 +61,8 @@ body {
 
 .menu .navbar ul li a { /* Estilos de los enlaces del navbar */
     font-size: 18px;
-    margin: 25px 20px 2px 0px;
+    margin: 34px 25px 2px 0px;
+    padding-right: 30px;
     color: #ffffff;
     display: inline-block;
     position: relative;
@@ -94,7 +95,7 @@ body {
 
 /* Estilos del Boton Login */
 .menu .btnLogin-popup {
-    margin-top: 20px;
+    margin-top: -11px;
     padding: 0 10px;
     width: 100;
     height: 50px;
@@ -280,7 +281,8 @@ p{
     transform: rotate(137deg);
 }
 
-#menu {
+
+#menu { /* Icono menú hamburguesa */
     display: none;
 }
 
@@ -291,7 +293,7 @@ p{
 .menu label {
     cursor: pointer;
     display: none;
-}
+} /* Finalizamos el menú hamburguesa */
 /* Finalizamos el navbar del header */
 
 /* Iniciamos la sección header */
@@ -812,16 +814,17 @@ textarea {
         right: 0;
         background-color: #1f1f1f;
         display: none;
+        transition: 1s ease;
     }
 
-    .menu .navbar ul li {
+    .menu .navbar ul li{
         width: 100%;
         text-align: center;
     }
 
     #menu:checked ~ .navbar {
         display: initial;
-        transition: 1s ease;
+        
     }
     /* Finalizamos la Sección Menú Responsive */
 
