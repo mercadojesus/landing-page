@@ -11,10 +11,9 @@
     list-style: none;
 }
 
-body {
+html, body {
     font-family: 'Poppins', sans-serif;
     background-color: #1f1f1f;
-    border: 2px solid rgb(234, 0, 255);
 }
 
 .container {
@@ -956,6 +955,16 @@ textarea {
     /* Finalizamos la Sección Footer Responsive */
 }
 /* Finalizamos la Sección Responsive */
+
+@media (max-width: 600px) {
+    body {
+        width: 600px;
+    }
+
+    .menu {
+        width: 600px;
+    }
+}
 
 html {
     scroll-behavior: smooth;
